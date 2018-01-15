@@ -1,0 +1,210 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[nudtpaper]{book (TUDT Thesis)}
+# NUDT Thesis textclass definition file.
+# Author : Yingbo Cui <cuiyingbomail@163.com>
+# Thanks the layout file from THU Thesis by He Fanbo <hefanbo@gmail.com>
+#
+# No specific license is declared. This work is free to use, 
+# modify or (re)distribute.
+
+#Format 35
+
+Input stdclass.inc
+Input numreport.inc
+
+NoStyle Part
+NoStyle Part*
+NoStyle Chapter*
+NoStyle Section*
+NoStyle Subsection*
+NoStyle Subsubsection*
+NoStyle Paragraph*
+NoStyle Subparagraph*
+NoStyle Address
+NoStyle Right_Address
+NoStyle Labeling
+NoStyle Bibliography
+
+Style Classification
+    CopyStyle       Degree
+    LatexName       classification
+    LabelString     "Classification"
+End
+
+Style Serialno
+    CopyStyle       Degree
+    LatexName       serialno
+    LabelString     "Serialno"
+End
+
+Style UDC
+    CopyStyle       Degree
+    LatexName       UDC
+    LabelString     "UDC"
+End
+
+Style Confidentiality
+    CopyStyle       Degree
+    LatexName       confidentiality
+    LabelString     "Confidentiality"
+End
+
+Style Title
+    CopyStyle       Title
+    LatexName       title
+    InTitle         0
+End
+
+Style Author
+    CopyStyle       Degree
+    LatexName       author
+    LabelString     "Author:"
+End
+
+Style Date(cn)
+    CopyStyle       Degree
+    LatexName       zhdate
+    InTitle         0
+End
+
+Style Today(cn)
+    CopyStyle       Degree
+    LatexName       zhtoday
+    InTitle         0
+End
+
+Style Subject
+    CopyStyle       Degree
+    LatexName       subject
+    LabelString     "Subject"
+End
+
+Style Researchfield
+    CopyStyle       Degree
+    LatexName       researchfield
+    LabelString    "Researchfield"
+End
+
+Style Supervisor
+    CopyStyle       Degree
+    LatexName       supervisor
+    LabelString     "Supervisor:"
+End
+
+Style Cosupervisor
+    CopyStyle       Degree
+    LatexName       cosupervisor
+    LabelString     "Cosupervisor:"
+End
+
+Style Papertype
+    CopyStyle       Degree
+    LatexName       papertype
+    LabelString     "Papertype:"
+End
+
+Style Title(en)
+    CopyStyle       Title
+    LatexName       entitle
+End
+
+Style Author(en)
+    CopyStyle       Degree
+    LatexName       enauthor
+    LabelString     "Author(en):"
+End
+
+Style Supervisor(en)
+    CopyStyle       Degree
+    LatexName       ensupervisor
+    LabelString     "Supervisor(en):"
+End
+
+Style Cosupervisor(en)
+    CopyStyle       Degree
+    LatexName       encosupervisor
+    LabelString     "Cosupervisor(en):"
+End
+
+Style Date(en)
+    CopyStyle       Date
+    LatexName       endate
+End
+
+Style Today(en)
+    CopyStyle       Date
+    LatexName       entoday
+End
+
+Style Subject(en)
+    CopyStyle       Degree
+    LatexName       ensubject
+    LabelString     "Subject(en):"
+End
+
+Style Papertype(en)
+    CopyStyle       Degree
+    LatexName       enpapertype
+    LabelString     "Papertype(en):"
+End
+
+Style Optionpaperclass
+    CopyStyle       Degree
+    LatexName       optionpaperclass
+    InTitle         0
+End
+
+Style Optionpaperclass(en)
+    CopyStyle       Degree
+    LatexName       optionpaperclassen
+    InTitle         0
+End
+
+Style Abstract
+    CopyStyle       Abstract
+    LatexName       cabstract
+    LabelString     "Abstract"
+End
+
+Style Keywords
+    CopyStyle       Abstract
+    LatexType       Command
+    LatexName       ckeywords
+    LabelType       Static
+    LabelString     "Keywords:"
+End
+
+Style Abstract(en)
+    CopyStyle       Abstract
+    LatexName       eabstract
+    LabelString     "Abstract(en)"
+End
+
+Style Keywords(en)
+    CopyStyle       Keywords               
+    LatexName       ekeywords
+    LabelType       Static
+    LabelString     "Keywords(en):"
+End
+
+Style Acknowledge
+    CopyStyle       Standard
+    LatexType       Environment
+    Category        BackMatter
+    LatexName       ack
+End
+
+Style Resume
+    CopyStyle       Standard
+    LatexType       Environment
+    Category        BackMatter
+    LatexName       resume
+    LabelType       Centered_Top_Environment
+    LabelString     "Resume"
+End
+
+Style Denotation
+    CopyStyle       Description
+    LatexType       Environment               
+    LatexName       denotation
+End
